@@ -1,2 +1,4 @@
 $default-font_family: "Copperplate";
-$nav-hover_background: #74AFAD;
+$nav_background: #3f6b68;
+$nav-hover_background: lighten($nav_background, 10%);
+$row_background: #F4EECB;
