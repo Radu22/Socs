@@ -634,47 +634,47 @@ input[type=text] {
 
 /*End-Header*/
 /*HomePage*/
-/* line 142, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 #content {
   margin-top: 113px;
 }
-/* line 146, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 #content .row {
   width: 100%;
   margin: 0 auto;
 }
-/* line 151, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 #content .row .infoColumn, #content .row .imageColumn {
   width: 35%;
   display: inline-block;
   padding: 6% 7%;
   vertical-align: middle;
 }
-/* line 159, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 #content .row .imageRow {
   float: right;
   width: 100%;
   height: 100%;
 }
-/* line 165, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 #content .row:nth-child(odd) {
   background: #F4EECB;
 }
-/* line 169, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 #content .row:nth-child(even) {
   background: #ebe0a1;
 }
 
 /*End-HomePage*/
 /*Footer*/
-/* line 182, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 ul.footerSection {
   background: #3f6b68;
   margin: 0;
   list-style: none;
   min-height: 50px;
 }
-/* line 191, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 ul.footerSection li.footerPages {
   display: inline-block;
   margin: 20px;
@@ -682,17 +682,17 @@ ul.footerSection li.footerPages {
   text-decoration: none;
   width: 10%;
 }
-/* line 198, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 ul.footerSection li.footerPages a {
   text-decoration: none;
   color: #FC8059;
   line-height: 15px;
 }
-/* line 203, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 ul.footerSection li.footerPages a:hover {
   background-color: #528b87;
 }
-/* line 209, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 ul.footerSection li.coppyright {
   display: inline-block;
   float: right;
@@ -702,3 +702,63 @@ ul.footerSection li.coppyright {
 }
 
 /*End-Footer*/
+/*
+*
+*     Media page
+*
+*/
+/* line 229, ../sass/styles.scss */
+.media-container {
+  margin-top: 165px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 50px;
+}
+/* line 235, ../sass/styles.scss */
+.media-container .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 242, ../sass/styles.scss */
+.media-container img {
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+/* line 248, ../sass/styles.scss */
+.media-container h2 {
+  text-align: center;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+/* line 255, ../sass/styles.scss */
+.media-container ul {
+  padding: 0;
+  margin-top: 20px;
+  width: 50%;
+}
+/* line 260, ../sass/styles.scss */
+.media-container .media-list-item {
+  font-family: Arvo, serif;
+  font-size: 15px;
+  margin-top: 30px;
+  list-style-type: none;
+  padding: 20px;
+  border: .5px solid black;
+  box-shadow: 5px 10px #888888;
+}
+/* line 269, ../sass/styles.scss */
+.media-container .media-list-item:hover {
+  background-color: #8ab9b6;
+  border-radius: 35%;
+}
+/* line 273, ../sass/styles.scss */
+.media-container .media-list-item a {
+  text-decoration: none;
+  cursor: auto;
+  color: black;
+}

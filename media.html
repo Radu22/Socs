@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Media Page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="meniu">
+        <ul class="nav">
+        
+	        <li class="pozaHeader">
+                <img class="pozaHeader" src="images/logo.png" alt="logo">
+                
+        	<input type="text" placeholder="Search..">
+			<li> <a href="./media.html">Media</a> </li>
+        
+	        	<li class="dropdown">Social Network&#9660;
+					<ul class="dropdown-content ">
+						<li><a href="">Users</a></li>
+				        <li><a href="">Files</a></li>
+				        <li><a href="">Events</a></li>
+				        <li><a href="">Groups</a></li>
+				        <li><a href="">Locations</a></li>
+					</ul>
+				</li>
+
+	        	<li class="dropdown">News&#9660;
+					<ul class="dropdown-content ">
+						<li><a href="">Software</a></li>
+				        <li><a href="">Hardware</a></li>
+					</ul>
+				</li>
+
+
+	        	<li class="dropdown">Blogs&#9660;
+					<ul class="dropdown-content ">
+						<li><a href="">The most searched</a></li>
+				        <li><a href="">By categories</a></li>
+					</ul>
+				</li>
+     </ul>
+</div>
+
+    <div class="media-container">
+        <h2>Choose from a vast spectrum of statistics for media !</h2>
+        <div class="wrapper">
+            <ul>
+                <li class="media-list-item"><a href="#" id="1" onclick="changeImage(this.id)"> Daily reach of various media in the United States in spring
+                        2016 </a></li>
+                <li class="media-list-item"><a href="#" id="2"  onclick="changeImage(this.id)"> Daily time spent with media worldwide from 2010 to 2018 (in
+                        minutes) </a></li>
+                <li class="media-list-item"><a href="#" id="3" onclick="changeImage(this.id)"> Growth of average time spent with major media per day in
+                        the United States from 2011 to 2017 </a></li>
+                <li class="media-list-item"><a href="#" id="4" onclick="changeImage(this.id)"> Median age of media users in the United States in fall
+                        2017, by medium </a></li>
+                <li class="media-list-item"><a href="#" id="5" onclick="changeImage(this.id)"> Time spent per day with digital versus traditional media in
+                        the United States from 2011 to 2017 </a> (in minutes)</li>
+                <li class="media-list-item"><a href="#"> Daily time 8- to 18-year-olds spent with media in the United
+                        States in 2015, by medium and age </a> (in minutes)</li>
+                <li class="media-list-item"><a href="#"> Household ownership of selected connected TV devices in the United
+                        States as of January 2017 </a></li>
+                <li class="media-list-item"><a href="#"> Time spent per day with traditional media in the United States
+                        from 2011 to 2017 (in minutes) </a></li>
+            </ul>
+            <img id="myImage" onclick="changeImage()" src="images/graph.png" width="500" height="500" alt="graph">
+        </div>
+    </div>
+
+
+    
+<footer>
+	<ul class="footerSection">
+		<li class="footerPages"><a href="">About us</a></li>
+		<li class="footerPages"><a href="">Privacy Policy</a></li>
+		<li class="footerPages"><a href="">Terms&Conditions</a></li>
+		<li class="coppyright">&#169;Socs 2018 All Rights Reserved</li>
+	</ul>
+</footer>
+
+    
+<script>
+    function changeImage(click_id) {
+        var image = document.getElementById('myImage');
+        var img1 = document.getElementById('1');
+        var img2 = document.getElementById('2');
+        var img3 = document.getElementById('3');
+
+        if (click_id == 1) {
+            image.src = "images/graph.png";
+        }
+        else if (click_id == 2) {
+            image.src = "images/graph.png";
+        }
+        else if (click_id == 3) {
+            image.src = "images/graph.png";
+        }
+        else {
+            image.src = "images/graph.png";
+        }
+    }
+
+</script>
+
+</body>
+
+</html>
