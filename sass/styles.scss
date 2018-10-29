@@ -136,7 +136,6 @@ input[type=text]
 
    /*End-Header*/
 
-
    /*HomePage*/
 
    #content
@@ -218,3 +217,65 @@ ul{
       }
     }
    /*End-Footer*/
+
+
+  /*
+  *
+  *     Media page
+  *
+  */
+
+
+  .media-container{
+      margin-top: 165px;
+      max-width: 100%;
+      height: auto;
+      margin-left: 50px;
+
+      .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      img{
+        align-self: flex-end;
+        margin-right: 50px;
+        margin-bottom: 100px; 
+      }
+
+      h2{
+        text-align: center;
+        font-family: 'Baloo Bhaijaan', cursive;
+        font-weight: 200;
+        letter-spacing: 2px;
+        font-size: 28px;
+      }
+      ul{
+        padding: 0;
+        margin-top: 20px;
+        width: 50%;
+      }
+      .media-list-item{
+          font-family: Arvo, serif;
+          font-size: 15px;
+          margin-top: 30px;
+          list-style-type: none;
+          padding: 20px;
+          border: .5px solid black;
+          box-shadow: 5px 10px #888888;
+
+          &:hover{
+            background-color: #8ab9b6;
+            border-radius: 35%;
+          }
+          a{
+            text-decoration: none;
+            cursor: auto;
+            color: black;
+          }   
+      }
+
+
+  }
