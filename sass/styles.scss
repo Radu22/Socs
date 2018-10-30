@@ -231,51 +231,64 @@ ul{
       max-width: 100%;
       height: auto;
       margin-left: 50px;
+      
+      h2{
+        padding: 20px;
+        text-align: center;
+        font-family: 'Baloo Bhaijaan', cursive;
+        font-weight: 200;
+        letter-spacing: 2px;
+        font-size: 28px;
+        text-shadow: 1px 1px purple;
+        background-color: rgba(143, 175, 153, 0.555);
+        border: 2px solid black;
+        border-radius: 10%;
+        width: 60%;
+        margin-left: 230px;
+      }
 
       .wrapper{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-      }
 
-      img{
-        align-self: flex-end;
-        margin-right: 50px;
-        margin-bottom: 100px; 
-      }
+        ul{
+            padding: 0;
+            margin-top: 20px;
+            width: 40%;
 
-      h2{
-        text-align: center;
-        font-family: 'Baloo Bhaijaan', cursive;
-        font-weight: 200;
-        letter-spacing: 2px;
-        font-size: 28px;
-      }
-      ul{
-        padding: 0;
-        margin-top: 20px;
-        width: 50%;
-      }
-      .media-list-item{
-          font-family: Arvo, serif;
-          font-size: 15px;
-          margin-top: 30px;
-          list-style-type: none;
-          padding: 20px;
-          border: .5px solid black;
-          box-shadow: 5px 10px #888888;
+            .media-list-item{
+                font-family: Arvo, serif;
+                font-size: 15px;
+                margin-top: 30px;
+                list-style-type: none;
+                padding: 20px;
+                border: .5px solid black;
+                box-shadow: 3px 3px #888888;
+                cursor: pointer;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
 
-          &:hover{
-            background-color: #8ab9b6;
-            border-radius: 35%;
-          }
-          a{
-            text-decoration: none;
-            cursor: auto;
-            color: black;
-          }   
-      }
-
+                &:hover{
+                  background-color: #8ab9b6;
+                  border-radius: 35%;
+                  overflow: visible;
+                  white-space: normal;
+                }
+                a{
+                  text-decoration: none;
+                  color: black;
+                }   
+            }
+    
+        }
+        img{
+          align-self: flex-end;
+          margin-right: 30px;
+          margin-bottom: 60px;
+        }
+      }     
 
   }
