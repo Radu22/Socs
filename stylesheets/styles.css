@@ -777,3 +777,66 @@ ul.footerSection li.coppyright {
   margin-right: 30px;
   margin-bottom: 60px;
 }
+
+/*
+*   404
+*
+*/
+/* line 307, ../sass/styles.scss */
+input[class="notFoundSearch"] {
+  margin: 20px auto 50px 730px;
+  width: 15%;
+}
+
+/* line 312, ../sass/styles.scss */
+#homepage-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 730px;
+  margin-bottom: 277px;
+  cursor: pointer;
+  width: 15%;
+}
+
+/* line 328, ../sass/styles.scss */
+.notFoundImage {
+  margin-top: 120px;
+  margin-left: 530px;
+  border-radius: 35%;
+  width: 35%;
+  height: 500px;
+}
+
+/* line 336, ../sass/styles.scss */
+.not-found {
+  background-color: slategrey;
+}
+
+/*
+*
+*   Media queries
+*
+*/
+@media screen and (max-width: 1186px) {
+  /* line 348, ../sass/styles.scss */
+  #header-search {
+    width: 70%;
+  }
+
+  /* line 351, ../sass/styles.scss */
+  input[class="notFoundSearch"] {
+    margin: 30px auto 40px 640px;
+    width: 15%;
+  }
+
+  /* line 355, ../sass/styles.scss */
+  #homepage-button {
+    margin-left: 640px;
+  }
+}
