@@ -715,50 +715,62 @@ ul.footerSection li.coppyright {
   margin-left: 50px;
 }
 /* line 235, ../sass/styles.scss */
+.media-container h2 {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 28px;
+  text-shadow: 1px 1px purple;
+  background-color: rgba(143, 175, 153, 0.555);
+  border: 2px solid black;
+  border-radius: 10%;
+  width: 60%;
+  margin-left: 230px;
+}
+/* line 250, ../sass/styles.scss */
 .media-container .wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 242, ../sass/styles.scss */
-.media-container img {
-  align-self: flex-end;
-  margin-right: 50px;
-  margin-bottom: 100px;
-}
-/* line 248, ../sass/styles.scss */
-.media-container h2 {
-  text-align: center;
-  font-family: 'Baloo Bhaijaan', cursive;
-  font-weight: 200;
-  letter-spacing: 2px;
-  font-size: 28px;
-}
-/* line 255, ../sass/styles.scss */
-.media-container ul {
+/* line 256, ../sass/styles.scss */
+.media-container .wrapper ul {
   padding: 0;
   margin-top: 20px;
-  width: 50%;
+  width: 40%;
 }
-/* line 260, ../sass/styles.scss */
-.media-container .media-list-item {
+/* line 261, ../sass/styles.scss */
+.media-container .wrapper ul .media-list-item {
   font-family: Arvo, serif;
   font-size: 15px;
   margin-top: 30px;
   list-style-type: none;
   padding: 20px;
   border: .5px solid black;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 3px 3px #888888;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-/* line 269, ../sass/styles.scss */
-.media-container .media-list-item:hover {
+/* line 274, ../sass/styles.scss */
+.media-container .wrapper ul .media-list-item:hover {
   background-color: #8ab9b6;
   border-radius: 35%;
+  overflow: visible;
+  white-space: normal;
 }
-/* line 273, ../sass/styles.scss */
-.media-container .media-list-item a {
+/* line 280, ../sass/styles.scss */
+.media-container .wrapper ul .media-list-item a {
   text-decoration: none;
-  cursor: auto;
   color: black;
+}
+/* line 287, ../sass/styles.scss */
+.media-container .wrapper img {
+  align-self: flex-end;
+  margin-right: 30px;
+  margin-bottom: 60px;
 }
