@@ -296,3 +296,66 @@ ul{
       }     
 
   }
+
+
+  /*
+  *   404
+  *
+  */
+
+
+  input[class="notFoundSearch"]{
+    margin: 20px auto 50px 730px;
+    width: 15%;
+  }
+
+  #homepage-button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 730px;
+    margin-bottom: 277px;
+    cursor: pointer;
+    width: 15%;
+
+  }
+
+  .notFoundImage{
+    margin-top: 120px;
+    margin-left: 530px;
+    border-radius: 35%;
+    width: 35%;
+    height: 500px;
+  }
+
+  .not-found{
+      background-color: slategrey;
+  }
+
+
+  /*
+  *
+  *   Media queries
+  *
+  */
+
+  @media screen and (max-width: 1186px){
+     #header-search{
+       width: 70%;
+     }
+    input[class="notFoundSearch"]{
+      margin: 30px auto 40px 640px;
+      width: 15%;
+    }
+    #homepage-button{
+      margin-left: 640px;
+    }
+      
+
+  }
+
