@@ -782,60 +782,139 @@ ul.footerSection li.coppyright {
 *   404
 *
 */
-/* line 307, ../sass/styles.scss */
-input[class="notFoundSearch"] {
-  margin: 20px auto 50px 730px;
-  width: 15%;
+/* line 306, ../sass/styles.scss */
+#notfound {
+  position: relative;
+  height: 100vh;
 }
 
-/* line 312, ../sass/styles.scss */
-#homepage-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
+/* line 311, ../sass/styles.scss */
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 320, ../sass/styles.scss */
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
   text-align: center;
-  text-decoration: none;
+}
+
+/* line 327, ../sass/styles.scss */
+.notfound .notfound-404 {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+  z-index: -1;
+}
+
+/* line 334, ../sass/styles.scss */
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 236px;
+  font-weight: 200;
+  margin: 0px;
+  color: #211b19;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 349, ../sass/styles.scss */
+.notfound .notfound-404 h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #211b19;
+  background: #fff;
+  padding: 10px 5px;
+  margin: auto;
   display: inline-block;
-  font-size: 16px;
-  margin-left: 730px;
-  margin-bottom: 277px;
-  cursor: pointer;
-  width: 15%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
 }
 
-/* line 328, ../sass/styles.scss */
-.notFoundImage {
-  margin-top: 120px;
-  margin-left: 530px;
-  border-radius: 35%;
-  width: 35%;
-  height: 500px;
+/* line 365, ../sass/styles.scss */
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #ff6300;
+  font-size: 18px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
-/* line 336, ../sass/styles.scss */
-.not-found {
-  background-color: slategrey;
+/* line 379, ../sass/styles.scss */
+.notfound a:hover {
+  color: #ff6300;
+  background: #211b19;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 385, ../sass/styles.scss */
+  .notfound .notfound-404 h1 {
+    font-size: 148px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 391, ../sass/styles.scss */
+  .notfound .notfound-404 {
+    height: 148px;
+    margin: 0px auto 10px;
+  }
+
+  /* line 395, ../sass/styles.scss */
+  .notfound .notfound-404 h1 {
+    font-size: 86px;
+  }
+
+  /* line 398, ../sass/styles.scss */
+  .notfound .notfound-404 h2 {
+    font-size: 16px;
+  }
+
+  /* line 401, ../sass/styles.scss */
+  .notfound a {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}
 /*
 *
 *   Media queries
 *
 */
 @media screen and (max-width: 1186px) {
-  /* line 348, ../sass/styles.scss */
+  /* line 414, ../sass/styles.scss */
   #header-search {
     width: 70%;
   }
 
-  /* line 351, ../sass/styles.scss */
+  /* line 417, ../sass/styles.scss */
   input[class="notFoundSearch"] {
     margin: 30px auto 40px 640px;
     width: 15%;
   }
 
-  /* line 355, ../sass/styles.scss */
+  /* line 421, ../sass/styles.scss */
   #homepage-button {
     margin-left: 640px;
   }
