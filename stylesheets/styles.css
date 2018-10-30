@@ -530,16 +530,19 @@ template {
 .nav {
   list-style: none;
   text-align: center;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin: 16px 0 0 0;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 29, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
+.nav #homepage {
+  padding-left: 0;
+}
+/* line 32, ../sass/styles.scss */
 .nav li {
   display: inline;
 }
-/* line 33, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .nav li a {
   display: inline-block;
   padding: 1.5%;
@@ -550,14 +553,14 @@ template {
   font-weight: bold;
   line-height: 24px;
   text-decoration: none;
-  color: #FC8059;
+  color: #FFF;
 }
-/* line 46, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .nav li a:hover {
   background-color: #528b87;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .pozaHeader {
   vertical-align: middle;
   padding: 10px 0px;
@@ -565,7 +568,7 @@ template {
   margin-right: 2%;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 li.dropdown {
   position: relative;
   display: inline-block;
@@ -577,14 +580,14 @@ li.dropdown {
   font-weight: bold;
   line-height: 20px;
   text-decoration: none;
-  color: #FC8059;
+  color: #FFF;
 }
-/* line 79, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 li.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* line 86, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 ul.dropdown-content {
   display: none;
   position: absolute;
@@ -601,7 +604,7 @@ ul.dropdown-content {
   text-decoration: none;
   margin-top: 10px;
 }
-/* line 103, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 ul.dropdown-content li a {
   display: block;
   line-height: 40px;
@@ -609,16 +612,16 @@ ul.dropdown-content li a {
   margin: auto;
   white-space: nowrap;
 }
-/* line 112, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 ul.dropdown-content ul {
   text-align: center;
 }
-/* line 117, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 ul.dropdown-content li:hover {
   background-color: #528b87;
 }
 
-/* line 123, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 input[type=text] {
   width: 20%;
   box-sizing: border-box;
@@ -634,47 +637,51 @@ input[type=text] {
 
 /*End-Header*/
 /*HomePage*/
-/* line 141, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 #content {
-  margin-top: 113px;
+  margin-top: 97px;
 }
-/* line 145, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 #content .row {
   width: 100%;
   margin: 0 auto;
 }
-/* line 150, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 #content .row .infoColumn, #content .row .imageColumn {
   width: 35%;
   display: inline-block;
   padding: 6% 7%;
   vertical-align: middle;
 }
-/* line 158, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
+#content .row .infoColumn p, #content .row .imageColumn p {
+  font-size: 18px;
+}
+/* line 165, ../sass/styles.scss */
 #content .row .imageRow {
   float: right;
   width: 100%;
   height: 100%;
 }
-/* line 164, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 #content .row:nth-child(odd) {
   background: #F4EECB;
 }
-/* line 168, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 #content .row:nth-child(even) {
   background: #ebe0a1;
 }
 
 /*End-HomePage*/
 /*Footer*/
-/* line 181, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 ul.footerSection {
   background: #3f6b68;
   margin: 0;
   list-style: none;
   min-height: 50px;
 }
-/* line 190, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 ul.footerSection li.footerPages {
   display: inline-block;
   margin: 20px;
@@ -682,21 +689,21 @@ ul.footerSection li.footerPages {
   text-decoration: none;
   width: 10%;
 }
-/* line 197, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 ul.footerSection li.footerPages a {
   text-decoration: none;
-  color: #FC8059;
+  color: #FFF;
   line-height: 15px;
 }
-/* line 202, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 ul.footerSection li.footerPages a:hover {
   background-color: #528b87;
 }
-/* line 208, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 ul.footerSection li.coppyright {
   display: inline-block;
   float: right;
-  color: #FC8059;
+  color: #FFF;
   margin: 20px;
   font-weight: 600;
 }
@@ -707,14 +714,14 @@ ul.footerSection li.coppyright {
 *     Media page
 *
 */
-/* line 229, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .media-container {
   margin-top: 165px;
   max-width: 100%;
   height: auto;
   margin-left: 50px;
 }
-/* line 235, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .media-container h2 {
   padding: 20px;
   text-align: center;
@@ -729,20 +736,20 @@ ul.footerSection li.coppyright {
   width: 60%;
   margin-left: 230px;
 }
-/* line 250, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .media-container .wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 256, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .media-container .wrapper ul {
   padding: 0;
   margin-top: 20px;
   width: 40%;
 }
-/* line 261, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 .media-container .wrapper ul .media-list-item {
   font-family: Arvo, serif;
   font-size: 15px;
@@ -756,19 +763,19 @@ ul.footerSection li.coppyright {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 274, ../sass/styles.scss */
+/* line 281, ../sass/styles.scss */
 .media-container .wrapper ul .media-list-item:hover {
   background-color: #8ab9b6;
   border-radius: 35%;
   overflow: visible;
   white-space: normal;
 }
-/* line 280, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 .media-container .wrapper ul .media-list-item a {
   text-decoration: none;
   color: black;
 }
-/* line 287, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 .media-container .wrapper img {
   align-self: flex-end;
   margin-right: 30px;
