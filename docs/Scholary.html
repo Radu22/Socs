@@ -28,9 +28,11 @@
                 <li><a href="#descrierea-proiectului">1. Descrierea proiectului</a></li>
                 <li><a href="#idei-concepte-design">2. Idei/concepte importante privind designul general</a></li>
                 <li><a href="#interactiune-utilizator">3. Maniera de interacţiune cu utilizatorul</a></li>
-                <li><a href="#cod-sursa">4. Maniera de folosire a sistemului de management al codului-sursă/Managementul taskurilor
+                <li><a href="#USE-CASE">4. USE CASE, API</a></li>
+                <li><a href="#cod-sursa">5. Maniera de folosire a sistemului de management al codului-sursă/Managementul taskurilor
                 </a></li>
-                <li><a href="#membrii-echipei">5. Membrii echipei</a></li>
+                <li><a href="#despre-microdate">6. Avantajele utilizarii microdatelor</a></li>
+                <li><a href="#membrii-echipei">7. Membrii echipei</a></li>
             </ul>
             <!--</p>-->
         </aside>
@@ -46,7 +48,7 @@
     <section id="idei-concepte-design">
         <h2>2. Idei/concepte importante privind designul general</h2>
         <figure typeof="sa:Image1">
-            <img src="images/prototip-homepage1.png" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/prototip-homepage1.png">
             <figcaption>
                 Prima schiță a paginii principale
             </figcaption>
@@ -58,7 +60,7 @@
         </blockquote>
 
         <figure typeof="sa:Image2">
-            <img src="images/wireframe.png" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/wireframe.png">
             <figcaption>
                 Categoriile abordate in aplicatie
             </figcaption>
@@ -68,7 +70,7 @@
         </blockquote>
 
         <figure typeof="sa:Image3">
-            <img src="images/prototip2.png" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/prototip2.png">
             <figcaption>
                 Schita paginii categoriei Media
             </figcaption>
@@ -79,21 +81,21 @@
         </blockquote>
 
         <figure typeof="sa:Image4">
-            <img src="images/schita-404.PNG" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/schita-404.PNG">
             <figcaption>
                 Schita pagina 404
             </figcaption>
         </figure>
 
         <figure typeof="sa:Image5">
-            <img src="images/prototip-homepage2.PNG" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/prototip-homepage2.PNG">
             <figcaption>
                 Demo pagina principala(html&css)
             </figcaption>
         </figure>
 
         <figure typeof="sa:Image6">
-            <img src="images/prototip-media.PNG" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/prototip-media.PNG">
             <figcaption>
                 Demo pagina media(html&css)
             </figcaption>
@@ -114,8 +116,27 @@
         </blockquote>
     </section>
 
+    <section id="USE-CASE">
+        <h2>4. USE CASE, API-URI</h2>
+        <blockquote>
+            <p>Interactiunea dintre utilizator si aplicatia WEB se realizeaza astfel:</p>
+                <img class="drafts" src="images/use-case.PNG">
+                <p>- aplicatia WEB face request catre mai multe API-uri in mod asincron</p>
+                <p>- API-urile introduc datele in baza de date</p>
+                <p>- se realizeaza procesarea datelor (eliminare noise -> date repetitive, date necorespunzatoare cu categoria selectata de utilizator etc)</p>
+                <p>- se face afisarea datelor folosind diagrame de tipul: pie chart, bar chart, bubble chart; datele se vor filtra/sorta la alegerea uitilizatorului</p>
+
+            <p>Am ales adaugarea datelor primite de la API-uri intr-o <b>baza de date</b>(LOCAL STORAGE) deoarece se pot <b>procesa si filtra</b> mai usor, reactualizand mereu continutul primit de la API-uri, in cazul in care utilizatorul este offline, se vor afisa doar datele existente in baza de date, acest lucru permitand aplicatiei sa ruleze offline.</p>
+
+            <h3>API-uri:</h3>
+                <p>- Graph API(Facebook)</p>
+                <p>- Twitter Search Tweets API</p>
+                <p>- LinkedIn API</p>
+        </blockquote>
+    </section>
+
     <section id="cod-sursa">
-        <h2>4. Maniera de folosire a sistemului de management al codului-sursă/Managementul taskurilor</h2>
+        <h2>5. Maniera de folosire a sistemului de management al codului-sursă/Managementul taskurilor</h2>
         <blockquote>
         <p>
             Codul se afla la adresa <a href="https://github.com/Radu22/Socs/tree/Project_1.0/Project_1.0">SOCS</a>. Am decis sa folosim urmatoarea structura pentru crearea branchurilor si a RC-ului:
@@ -123,7 +144,7 @@
         </blockquote>
 
         <figure typeof="sa:Image6">
-            <img src="images/branching.PNG" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/branching.PNG">
             <figcaption>
                 Source Tree - Git branching
             </figcaption>
@@ -142,34 +163,45 @@
         </blockquote>
 
         <figure typeof="sa:Image6">
-            <img src="images/trello.PNG" style="width:720px;height:560px;display:inline;border: 2px solid black">
+            <img class="drafts" src="images/trello.PNG">
             <figcaption>
                 Trello board
             </figcaption>
         </figure>
 
     </section>
+
+    <section id="despre-microdate">
+        <h2>6. Avantajele utilizarii microdatelor:</h2>
+        <blockquote>
+            <p>- uneori dorim sa adnotam contentul cu etichete specifice posibile de citit de catre sisteme (motoare de indexare pot identifica mai bine
+                continutul paginii folosing adnotari si prin urmare experienta de browsing este mult mai bogata).
+            </p>
+            <p>- sunt folosite pentru a oferi continut adecvat utilizatorilor</p>
+            <p>- localizare- motoarele de cautare care acopera anumtie zone pot oferi extensii locale speciale de microdate.</p>
+        </blockquote>
+    </section>
     <section typeof="sa:AuthorsList" id="membrii-echipei">
-        <h2>5. Membrii echipei</h2>
+        <h2>7. Membrii echipei</h2>
         <ol>
             <li typeof="sa:ContributorRole" property="schema:author">
                 <a href="https://github.com/DanStefanBalan" typeof="schema:Person">
-						<span property="schema:givenName">
-							Dan-Stefan
-						</span>
+                        <span property="schema:givenName">
+                            Dan-Stefan
+                        </span>
                     <span property="schema:familyName">
-							Balan
-						</span>
+                            Balan
+                        </span>
                 </a>
             </li>
             <li typeof="sa:ContributorRole" property="schema:author">
                 <a href="https://github.com/Radu22" typeof="schema:Person">
-						<span property="schema:givenName">
-							Radu
-						</span>
+                        <span property="schema:givenName">
+                            Radu
+                        </span>
                     <span property="schema:familyName">
-							Maftei
-						</span>
+                            Maftei
+                        </span>
                 </a>
             </li>
         </ol>
