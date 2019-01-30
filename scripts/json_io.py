@@ -41,9 +41,9 @@ for id in idlist:
     if api.GetStatus(id).text is not None :
         lenghtTweet.append(len(api.GetStatus(id).text))"""
 
-for id in idlist:
-    if api.GetStatus(id).user.description is not None :
-        lenghtDescription.append(len(api.GetStatus(id).user.description))
+for id in range(0,len(idlist)):
+    if api.GetStatus(id).user is not None :
+        print(len(api.GetStatus(id)))
 
 """imagesList.sort()
 lenghtTweet.sort()"""
@@ -54,6 +54,6 @@ lenghtTweet.sort()"""
 with open("scripts/lungime_tweet.json", "w") as write_file:
     json.dump(lenghtTweet, write_file)"""
 
-with open("scripts/lungimeDescriere_tweet.json", "w") as write_file:
-    json.dump(lenghtDescription, write_file)
+# with open("scripts/lungimeDescriere_tweet.json", "w") as write_file:
+#     json.dump(lenghtDescription, write_file)
 
