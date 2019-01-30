@@ -18,16 +18,10 @@ function readTextFile(file) {
     rawFile.send(dataFromJSON);
 }
 
-readTextFile("/scripts/media_urls.json");
 
 
+console.log(readTextFile("../lunime_poze.json"));
 
-for(let i = 0; i < dataFromJSON.length; ++i){
-        var img = new Image();
-        img.src = dataFromJSON[i];
-        var test = img.naturalWidth * img.naturalHeight;
-        pictureStats.push(test);
-}
-console.log(pictureStats);
+
 
 

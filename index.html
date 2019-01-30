@@ -1,114 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>HomePage</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/styless.css">
-	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-<div class="meniu">
-        <ul class="nav">
-        
-	        <li class="pozaHeader">
-	        	<img class="pozaHeader" src="images/logo.png" alt="logo"></li>
+	<div class="meniu">
+		<ul class="nav">
+
+			<li class="pozaHeader">
+				<img class="pozaHeader" src="images/logo.png" alt="logo"></li>
 			<li><input id="header-search" type="text" placeholder="Search.."></li>
-			<li><a href="./index.html" class="resp">Homepage </a></li>
-			<li> <a href="./media.html" class="resp">Media</a> </li>
-        
-	        	<li class="dropdown">Social Network&#9660;
-					<ul class="dropdown-content">
-						<li><a href="" class="resp">Users</a></li>
-				        <li><a href="" class="resp">Files</a></li>
-				        <li><a href="" class="resp">Events</a></li>
-				        <li><a href="" class="resp">Groups</a></li>
-				        <li><a href="" class="resp">Locations</a></li>
-					</ul>
-				</li>
 
-	        	<li class="dropdown resp">News&#9660;
-					<ul class="dropdown-content ">
-						<li><a href="" class="resp">Software</a></li>
-				        <li><a href="" class="resp">Hardware</a></li>
-					</ul>
-				</li>
-
-
-	        	<li class="dropdown resp">Blogs&#9660;
-					<ul class="dropdown-content ">
-						<li><a href="" class="resp"> The most searched</a></li>
-				        <li><a href="" class="resp">By categories</a></li>
-					</ul>
-				</li>
-     </ul>
-</div>
-
-<div id= "content">
-
-	<div class="row">
-		
-		<div class="infoColumn">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pharetra ligula, eget tincidunt sem. Aenean aliquam velit aliquet, consequat libero non, venenatis ipsum. Duis sit amet elementum nulla. In sed finibus ante, non efficitur risus. Maecenas aliquam fringilla nunc, a imperdiet dui volutpat ut. Pellentesque dignissim iaculis nisl, sit amet dignissim est consectetur et. Curabitur nec metus eget sem tincidunt scelerisque. Nam nunc ante, imperdiet sed blandit vitae, viverra a elit. Cras sed massa mi. Aliquam erat volutpat. Vivamus non porttitor massa. Sed enim justo, hendrerit nec lobortis id, lobortis ut ante. Nam vel libero nec augue condimentum sollicitudin.</p>
-		</div>
-
-		<div class="imageColumn">
-			<!-- <img class="imageRow" src="images/bar_chart.png" alt="logo"> -->
-			<div id="chart"></div>
-		</div>
+		</ul>
 	</div>
 
-	<div class="row">
-		
-		<div class="infoColumn">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pharetra ligula, eget tincidunt sem. Aenean aliquam velit aliquet, consequat libero non, venenatis ipsum. Duis sit amet elementum nulla. In sed finibus ante, non efficitur risus. Maecenas aliquam fringilla nunc, a imperdiet dui volutpat ut. Pellentesque dignissim iaculis nisl, sit amet dignissim est consectetur et. Curabitur nec metus eget sem tincidunt scelerisque. Nam nunc ante, imperdiet sed blandit vitae, viverra a elit. Cras sed massa mi. Aliquam erat volutpat. Vivamus non porttitor massa. Sed enim justo, hendrerit nec lobortis id, lobortis ut ante. Nam vel libero nec augue condimentum sollicitudin.</p>
+	<div id="content">
+
+		<div class="row">
+			<p>Photo size(HXW) from twitter tweets of animals </p>
+			<div class="infoColumn">
+
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Select a Chart</button>
+					<div id="myDropdown1" class="dropdown-content">
+						<a href="#home">Bar Chart</a>
+						<a href="#about">Donut Chart</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="imageColumn">
+				<div id="chart"></div>
+			</div>
 		</div>
 
-		<div class="imageColumn">
-			<img class="imageRow" src="images/donut_chart.png" alt="logo">
+		<div class="row">
+				<p>Photo size(HXW) from twitter tweets of animals </p>
+				<div class="infoColumn">
+	
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">Select a Chart</button>
+						<div id="myDropdown2" class="dropdown-content">
+							<a href="#home">Bar Chart</a>
+							<a href="#about">Donut Chart</a>
+							<a href="#contact">Contact</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="imageColumn">
+					<div id="chart"></div>
+				</div>
+			</div>
+
+		<div class="row">
+			<p>Photo size(HXW) from twitter tweets of animals </p>
+			<div class="infoColumn">
+
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Select a Chart</button>
+					<div id="myDropdown3" class="dropdown-content">
+						<a href="#home">Bar Chart</a>
+						<a href="#about">Donut Chart</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="imageColumn">
+				<div id="chart"></div>
+			</div>
 		</div>
+
 	</div>
 
-	<div class="row">
-		
-		<div class="infoColumn">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pharetra ligula, eget tincidunt sem. Aenean aliquam velit aliquet, consequat libero non, venenatis ipsum. Duis sit amet elementum nulla. In sed finibus ante, non efficitur risus. Maecenas aliquam fringilla nunc, a imperdiet dui volutpat ut. Pellentesque dignissim iaculis nisl, sit amet dignissim est consectetur et. Curabitur nec metus eget sem tincidunt scelerisque. Nam nunc ante, imperdiet sed blandit vitae, viverra a elit. Cras sed massa mi. Aliquam erat volutpat. Vivamus non porttitor massa. Sed enim justo, hendrerit nec lobortis id, lobortis ut ante. Nam vel libero nec augue condimentum sollicitudin.</p>
-		</div>
-
-		<div class="imageColumn">
-			<img class="imageRow" src="images/line_chart.png" alt="logo">
-		</div>
-	</div>
-
-	<div class="row">
-		
-		<div class="infoColumn">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pharetra ligula, eget tincidunt sem. Aenean aliquam velit aliquet, consequat libero non, venenatis ipsum. Duis sit amet elementum nulla. In sed finibus ante, non efficitur risus. Maecenas aliquam fringilla nunc, a imperdiet dui volutpat ut. Pellentesque dignissim iaculis nisl, sit amet dignissim est consectetur et. Curabitur nec metus eget sem tincidunt scelerisque. Nam nunc ante, imperdiet sed blandit vitae, viverra a elit. Cras sed massa mi. Aliquam erat volutpat. Vivamus non porttitor massa. Sed enim justo, hendrerit nec lobortis id, lobortis ut ante. Nam vel libero nec augue condimentum sollicitudin.</p>
-		</div>
-
-		<div class="imageColumn">
-			<img class="imageRow" src="images/pie_chart.png" alt="logo">
-		</div>
-	</div>
-
-</div>
-
-<footer>
-	<ul class="footerSection">
-		<li class="footerPages"><a href="">About us</a></li>
-		<li class="footerPages"><a href="">Privacy Policy</a></li>
-		<li class="footerPages"><a href="">Terms&Conditions</a></li>
-		<li class="coppyright">&#169;Socs 2018 All Rights Reserved</li>
-	</ul>
-</footer>
+	<footer>
+		<ul class="footerSection">
+			<li class="coppyright">&#169;Socs 2018 All Rights Reserved</li>
+		</ul>
+	</footer>
 
 
 
-<script src="scripts/bar.js"></script>
-<script src="scripts/canvas-script.js"></script>
+	<script src="scripts/bar.js"></script>
+	<script src="scripts/canvas-script.js"></script>
+	<script src="scripts/dropdown.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
-import twitter, json
-
-
+import twitter, json, requests
+from PIL import Image
+from io import BytesIO
 
 consumer_key = '9M4W5fdGcoJIAnbPFl3TbFXj6'
 consumer_secret = 'Q9TqVpG4GgsvZ98EanH2VANWYLKSvBhKsfQvITJJykTbXhuJKp'
@@ -12,24 +12,48 @@ api = twitter.Api(consumer_key =consumer_key,
                   access_token_key = access_token,
                   access_token_secret=access_secret)
 
-searchBy = api.GetSearch("cat")
+def get_image_size(url):
+    data = requests.get(url).content
+    im = Image.open(BytesIO(data))    
+    return im.size
+
+searchByCat = api.GetSearch("cat", count=200)
+searchByDog = api.GetSearch("dogs", count=100)
 idlist = list()
-for i in searchBy:
+for i in searchByCat:
+    idlist.append(i.id)
+
+for i in searchByDog:
     idlist.append(i.id)
 
 imagesList = list()
+lenghtTweet = list()
+lenghtDescription = list()
+
+
+"""for id in idlist:
+    if api.GetStatus(id).media is not None :
+        width, height = get_image_size(api.GetStatus(id).media[0].media_url)
+        imagesList.append(width*height)
+        lenghtTweet.append(len(api.GetStatus(id).text))
+
 for id in idlist:
-    if api.GetStatus(id).media is not None:
-        imagesList.append(api.GetStatus(id).media[0].media_url)
+    if api.GetStatus(id).text is not None :
+        lenghtTweet.append(len(api.GetStatus(id).text))"""
 
-with open("media_urls.json", "w") as write_file:
+for id in idlist:
+    if api.GetStatus(id).user.description is not None :
+        lenghtDescription.append(len(api.GetStatus(id).user.description))
+
+"""imagesList.sort()
+lenghtTweet.sort()"""
+
+"""with open("scripts/lungime_poze.json", "w") as write_file:
     json.dump(imagesList, write_file)
-	
 
-# import git 
+with open("scripts/lungime_tweet.json", "w") as write_file:
+    json.dump(lenghtTweet, write_file)"""
 
-# g = git.cmd.Git('./')
-# g.push()
-
-
+with open("scripts/lungimeDescriere_tweet.json", "w") as write_file:
+    json.dump(lenghtDescription, write_file)
 
