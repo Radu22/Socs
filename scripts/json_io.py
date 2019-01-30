@@ -12,7 +12,7 @@ api = twitter.Api(consumer_key =consumer_key,
                   access_token_key = access_token,
                   access_token_secret=access_secret)
 
-searchBy = api.GetSearch("human")
+searchBy = api.GetSearch("cat")
 idlist = list()
 for i in searchBy:
     idlist.append(i.id)
