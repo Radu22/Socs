@@ -12,7 +12,7 @@ api = twitter.Api(consumer_key =consumer_key,
                   access_token_key = access_token,
                   access_token_secret=access_secret)
 
-searchBy = api.GetSearch("cats")
+searchBy = api.GetSearch("human")
 idlist = list()
 for i in searchBy:
     idlist.append(i.id)
@@ -26,10 +26,10 @@ with open("media_urls.json", "w") as write_file:
     json.dump(imagesList, write_file)
 	
 
-import git 
+# import git 
 
-g = git.cmd.Git('./')
-g.push()
+# g = git.cmd.Git('./')
+# g.push()
 
 
 
