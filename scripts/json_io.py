@@ -25,8 +25,11 @@ for id in idlist:
 with open("media_urls.json", "w") as write_file:
     json.dump(imagesList, write_file)
 	
-print(imagesList)
 
+import git 
+
+g = git.cmd.Git('./')
+g.push()
 
 
 
