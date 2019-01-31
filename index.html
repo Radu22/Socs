@@ -5,7 +5,6 @@
 	<title>HomePage</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/styless.css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,63 +14,45 @@
 
 	<div class="meniu">
 		<ul class="nav">
-
 			<li class="pozaHeader">
 				<img class="pozaHeader" src="images/logo.png" alt="logo"></li>
 			<li><input id="header-search" type="text" placeholder="Search.."></li>
-
 		</ul>
 	</div>
 
 	<div id="content">
 
 		<div class="row">
-			<p>Photo size(HXW) from twitter tweets of animals </p>
-			<div class="infoColumn">
-
-			</div>
-
-			<div class="imageColumn">
-				<div id="chart"></div>
-			</div>
+			<p>Photo size (Height * Width) from twitter tweets of animals </p>
+			<div id="chart"></div>
 		</div>
 
 		<div class="row">
-				<p>Size of text of tweets</p>
-				<div class="infoColumn">
-	
-				</div>
-	
-				<div class="imageColumn">
-						<canvas id="myCanvas"></canvas>
-				</div>
-			</div>
+			<p>Size of tweets</p>
+
+
+			<canvas id="myCanvas"></canvas>
+		</div>
 
 		<div class="row">
 			<p>Size of description of user profiles</p>
-			<div class="infoColumn">
-			</div>
 
-			<div class="imageColumn">
-					<canvas id="canvas" width="800" height="400">
-							Canvas not supported!
-						</canvas>
-			</div>
+			<canvas id="canvas" width="800" height="400">
+				Canvas not supported!
+			</canvas>
 		</div>
-
 	</div>
 
+	</div>
+	
 	<footer>
 		<ul class="footerSection">
 			<li class="coppyright">&#169;Socs 2018 All Rights Reserved</li>
 		</ul>
 	</footer>
-
-
-
-	<script src="scripts/bar.js"></script>
-	<script src="scripts/canvas-script.js"></script>
-	<script src="scripts/dropdown.js"></script>
+	<script src="scripts/barchart.js"></script>
+	<script src="scripts/linechart.js"></script>
+	<script src = "scripts/piechart.js"></script>
 </body>
 
 </html>
